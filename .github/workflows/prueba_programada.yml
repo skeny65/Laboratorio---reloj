@@ -1,0 +1,16 @@
+name: Mi Primera Automatización Programada
+on:
+  schedule:
+    # Se ejecutará a las 10:25 AM (Hora de Lima/PET)
+    - cron: '25 10 16 4 *'
+  workflow_dispatch: # Esto nos permite ejecutarlo manualmente también para probar
+
+jobs:
+  tarea-de-prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludo automático
+        run: |
+          echo "Hola! Soy una máquina virtual de GitHub."
+          echo "Me acabo de encender solo porque el reloj dio la hora."
+          echo "En cuanto termine este paso, me autodestruiré."
