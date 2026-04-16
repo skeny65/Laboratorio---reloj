@@ -2,7 +2,7 @@ name: Mi Primera Automatización Programada
 on:
   schedule:
     # Se ejecutará a las 10:25 AM (Hora de Lima/PET)
-    - cron: '25 10 16 4 *'
+    - cron: '30 15 16 4 *'
   workflow_dispatch: # Esto nos permite ejecutarlo manualmente también para probar
 
 jobs:
